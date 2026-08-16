@@ -119,6 +119,12 @@
   background-position: center top;
 }
 
+@media (max-width: 768px) {
+  .hero-bg {
+    background-image: url('/mobile-hero.png') !important;
+  }
+}
+
 .hero-video {
   position: absolute;
   inset: 0;
