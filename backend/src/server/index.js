@@ -54,6 +54,10 @@ app.use('/api/content', contentRoutes);
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  console.log(`FLYY 360 API running on port ${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`FLYY 360 API running on port ${PORT}`);
+  });
+}
+
+export default app;
