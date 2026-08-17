@@ -1,5 +1,5 @@
 export default function Logo({ size = 'md', className = '' }) {
-  const sizes = { sm: 80, md: 110, lg: 140 };
+  const sizes = { sm: 80, nav: 130, md: 110, lg: 140 };
   const w = sizes[size] || sizes.md;
 
   return (

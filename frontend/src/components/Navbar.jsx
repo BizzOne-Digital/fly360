@@ -29,7 +29,7 @@ export default function Navbar() {
     <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container header-inner">
         <Link to="/" className="header-logo">
-          <Logo size="sm" className="navbar-logo" />
+          <Logo size="nav" className="navbar-logo" />
         </Link>
 
         <nav className="header-nav">

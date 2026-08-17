@@ -27,10 +27,6 @@
   flex-shrink: 0;
 }
 
-.navbar-logo {
-  transform: scale(1.7);
-  transform-origin: left center;
-}
 
 .header-nav {
   display: flex;
@@ -1235,4 +1231,5 @@
   .gallery-preview-grid { grid-template-columns: repeat(2, 1fr); }
   .how-it-works-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr; }
+  .navbar-logo { width: 96px !important; }
 }
