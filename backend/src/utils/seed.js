@@ -193,6 +193,18 @@ const seed = async () => {
       console.log('Gallery seeded');
     }
 
+    // Seed client-provided gallery media (idempotent, runs even if gallery already has items)
+    const clientMedia = [
+      { title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img1.jpg', publicId: 'local-img1', order: 0 },
+      { title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img2.jpg', publicId: 'local-img2', order: 0 },
+      { title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img3.jpg', publicId: 'local-img3', order: 0 },
+      { title: 'FLYY 360 Showcase', category: '360-videos', mediaType: 'video', url: '/showcase.mp4', publicId: 'local-showcase', order: 0 },
+    ];
+    for (const item of clientMedia) {
+      await Gallery.findOneAndUpdate({ publicId: item.publicId }, item, { upsert: true });
+    }
+    console.log('Client media seeded');
+
     // Seed content
     const contentItems = [
       { key: 'heroTagline', value: 'RAW MOMENTS. REAL MEMORIES.', section: 'hero' },
@@ -209,7 +221,7 @@ const seed = async () => {
       { key: 'aboutHeading', value: 'We Don\'t Just Capture Moments.\nWe Create Experiences.', section: 'about' },
       {
         key: 'aboutContent',
-        value: 'FLYY 360 provides professionally operated 360 booth experiences and social photography designed to create immersive, entertaining and instantly shareable memories. From birthdays and private parties to weddings, proms, pep rallies, schools, festivals, corporate events, brand promotions, and local businesses — we bring the VIP experience to every occasion.',
+        value: "We are an operator-assisted 360 Photo Booth & Social Photography company built on a passion for creating unforgettable experiences and turning special moments into memories that last. What started with a vision to bring something fresh, exciting, and elevated to celebrations has grown into an experience designed to make every guest feel like the Star.\n\nAt FLYY 360, we go beyond simply taking photos. We create high-energy, immersive, shareable moments with professional service, creative presentation, premium experiences, and VIP treatment from start to finish. Whether we're capturing a milestone, elevating a celebration, creating engaging social content, or bringing a brand experience to life, our goal is simple: make every moment FLYY.\n\nFLYY 360 — Where Every Moment Takes Center Stage.",
         section: 'about',
       },
       { key: 'promoTitle', value: 'MAKE YOUR EVENT UNFORGETTABLE', section: 'promo' },
@@ -249,7 +261,7 @@ const seed = async () => {
       { key: 'instagram', value: '@flyy_360' },
       { key: 'instagramUrl', value: 'https://instagram.com/flyy_360' },
       { key: 'facebookUrl', value: 'https://facebook.com/flyy360' },
-      { key: 'promoVideoUrl', value: '' },
+      { key: 'promoVideoUrl', value: '/showcase.mp4' },
     ];
 
     for (const item of settingsItems) {

@@ -9,7 +9,7 @@ export const DEFAULT_CONTENT = {
   promoBadge: 'GRAND OPENING SPECIAL — 10% OFF YOUR FIRST BOOKING EVENT',
   aboutHeading: "We Don't Just Capture Moments.\nWe Create Experiences.",
   aboutContent:
-    'FLYY 360 provides professionally operated 360 booth experiences and social photography designed to create immersive, entertaining and instantly shareable memories.',
+    "We are an operator-assisted 360 Photo Booth & Social Photography company built on a passion for creating unforgettable experiences and turning special moments into memories that last. What started with a vision to bring something fresh, exciting, and elevated to celebrations has grown into an experience designed to make every guest feel like the Star.\n\nAt FLYY 360, we go beyond simply taking photos. We create high-energy, immersive, shareable moments with professional service, creative presentation, premium experiences, and VIP treatment from start to finish. Whether we're capturing a milestone, elevating a celebration, creating engaging social content, or bringing a brand experience to life, our goal is simple: make every moment FLYY.\n\nFLYY 360 — Where Every Moment Takes Center Stage.",
   promoTitle: 'MAKE YOUR EVENT UNFORGETTABLE',
   promoText: 'Bring the energy, excitement and VIP experience of FLYY 360 to your next event.',
   promoDiscount: '10% OFF FIRST BOOKING',
@@ -33,7 +33,7 @@ export const DEFAULT_SETTINGS = {
   instagram: '@flyy_360',
   instagramUrl: 'https://instagram.com/flyy_360',
   facebookUrl: 'https://facebook.com/flyy360',
-  promoVideoUrl: '',
+  promoVideoUrl: '/showcase.mp4',
 };
 
 export const DEFAULT_SERVICES = [
@@ -156,6 +156,10 @@ export const DEFAULT_PACKAGES = [
 ];
 
 export const DEFAULT_GALLERY = [
+  { id: 'g0a', title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img1.jpg' },
+  { id: 'g0b', title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img2.jpg' },
+  { id: 'g0c', title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img3.jpg' },
+  { id: 'g0d', title: 'FLYY 360 Showcase', category: '360-videos', mediaType: 'video', url: '/showcase.mp4' },
   { id: 'g1', title: 'Wedding Celebration', category: 'weddings', mediaType: 'image', url: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80' },
   { id: 'g2', title: 'Birthday Party', category: 'parties', mediaType: 'image', url: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80' },
   { id: 'g3', title: 'Corporate Event', category: 'corporate', mediaType: 'image', url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80' },

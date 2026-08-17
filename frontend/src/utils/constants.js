@@ -56,7 +56,6 @@ export const HIGHLIGHTS = [
 ];
 
 export const ABOUT_AUDIENCES = [
-  'Birthdays', 'Private parties', 'Weddings', 'Proms', 'Pep rallies',
-  'Schools', 'Festivals', 'Special events', 'Corporate events',
-  'Brand promotions', 'Local businesses',
+  'Weddings', 'Birthdays', 'Quinceañeras', 'Family Reunions', 'Proms',
+  'Class Reunions', 'Festivals', 'Brand Promotions', 'Corporate & Special Events',
 ];

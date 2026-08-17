@@ -28,8 +28,7 @@ const WHY_CHOOSE_US = [
 export default function AboutPage() {
   const { content } = useOutletContext();
 
-  const heading = content.aboutHeading || "We Don't Just Capture Moments.\nWe Create Experiences.";
-  const aboutText = content.aboutContent || 'FLYY 360 provides professionally operated 360 booth experiences and social photography designed to create immersive, entertaining and instantly shareable memories.';
+  const heading = content.aboutHeading || 'About FLYY 360 (Raw & Reel)';
 
   return (
     <main className="page-main">
@@ -44,10 +43,21 @@ export default function AboutPage() {
         <div className="container about-page-grid">
           <div className="about-page-text">
             <h2 className="section-title" style={{ whiteSpace: 'pre-line' }}>{heading}</h2>
-            <p className="about-body">{aboutText}</p>
             <p className="about-body">
-              From birthdays and private parties to weddings, proms, pep rallies, schools, festivals,
-              corporate events, brand promotions, and local businesses — we bring the VIP experience to every occasion.
+              At FLYY 360 (Raw &amp; Reel), we believe every event deserves to feel unforgettable. Based in Rome,
+              Georgia, we bring a premium entertainment and photography experience directly to you—and we travel
+              to help make celebrations and special events extraordinary wherever they take place.
+            </p>
+            <p className="about-body">
+              We specialize in operator-assisted 360 Photo Booth experiences and Social Photography, designed to
+              capture the energy, personality, and excitement of every moment. But we&apos;re more than just a
+              photo booth—we create an experience where you and your guests are the stars.
+            </p>
+            <p className="about-body">
+              From premium backdrops and creative props to VIP treatment, custom overlays, promotional branding,
+              and more, we pay attention to the details that take an ordinary event and turn it into a memorable
+              experience. Our professional team is dedicated to providing exceptional service from setup to the
+              final photo, video, and social-ready memories.
             </p>
           </div>
           <div className="about-page-image">
@@ -58,12 +68,30 @@ export default function AboutPage() {
 
       <section className="section section-dark">
         <div className="container">
-          <h3 className="audience-heading">Perfect For</h3>
+          <h3 className="audience-heading">We Cater To</h3>
           <div className="audience-tags">
             {ABOUT_AUDIENCES.map((audience) => (
               <span key={audience} className="audience-tag">{audience}</span>
             ))}
           </div>
+          <p className="about-body" style={{ textAlign: 'center', maxWidth: 720, margin: '24px auto 0' }}>
+            Whether you&apos;re celebrating a milestone, creating memories with family and friends, promoting your
+            brand, or hosting a major corporate event, FLYY 360 (Raw &amp; Reel) is ready to bring the energy.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-cta">
+        <div className="container" style={{ textAlign: 'center' }}>
+          <h2 className="section-title">Your Event. Your Moment. Your Spotlight.</h2>
+          <p className="section-subtitle" style={{ margin: '0 auto 8px' }}>
+            We don&apos;t just show up—we show out. Our goal is to make every client feel like a VIP while
+            delivering a polished, professional, and exciting experience your guests will be talking about long
+            after the event is over.
+          </p>
+          <p style={{ color: 'var(--accent-gold)', fontWeight: 700, letterSpacing: '0.02em' }}>
+            FLYY 360 (Raw &amp; Reel) — Where Every Moment Becomes a Memory.
+          </p>
         </div>
       </section>
 
