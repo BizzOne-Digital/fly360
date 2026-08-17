@@ -197,12 +197,12 @@ const seed = async () => {
     const clientMedia = [
       { title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img1.jpg', publicId: 'local-img1', order: 0 },
       { title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img2.jpg', publicId: 'local-img2', order: 0 },
-      { title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img3.jpg', publicId: 'local-img3', order: 0 },
       { title: 'FLYY 360 Showcase', category: '360-videos', mediaType: 'video', url: '/showcase.mp4', publicId: 'local-showcase', order: 0 },
     ];
     for (const item of clientMedia) {
       await Gallery.findOneAndUpdate({ publicId: item.publicId }, item, { upsert: true });
     }
+    await Gallery.deleteOne({ publicId: 'local-img3' });
     console.log('Client media seeded');
 
     // Seed content

@@ -158,7 +158,6 @@ export const DEFAULT_PACKAGES = [
 export const DEFAULT_GALLERY = [
   { id: 'g0a', title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img1.jpg' },
   { id: 'g0b', title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img2.jpg' },
-  { id: 'g0c', title: 'FLYY 360 Setup', category: 'all', mediaType: 'image', url: '/img3.jpg' },
   { id: 'g0d', title: 'FLYY 360 Showcase', category: '360-videos', mediaType: 'video', url: '/showcase.mp4' },
   { id: 'g1', title: 'Wedding Celebration', category: 'weddings', mediaType: 'image', url: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80' },
   { id: 'g2', title: 'Birthday Party', category: 'parties', mediaType: 'image', url: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80' },
