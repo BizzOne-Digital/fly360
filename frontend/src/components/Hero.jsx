@@ -24,7 +24,7 @@ export default function Hero({ content = {}, settings = {} }) {
         <div className="hero-text">
           <h1 className="hero-title">
             <span className="hero-title-main">{content.heroTitle || 'FLYY 360'}</span>
-            <span className="hero-title-bracket">[{content.heroHighlight || 'RAW & REEL'}]</span>
+            <span className="hero-title-bracket">{content.heroHighlight || 'RAW & REEL'}</span>
           </h1>
 
           <h2 className="hero-headline">

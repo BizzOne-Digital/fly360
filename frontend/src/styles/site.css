@@ -171,11 +171,12 @@
 .hero-title-bracket {
   display: block;
   font-family: var(--font-metallic);
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.1rem, 2.2vw, 1.75rem);
   font-weight: 800;
   color: var(--accent-gold);
-  letter-spacing: 0.15em;
-  margin-top: 4px;
+  letter-spacing: 0.12em;
+  margin-top: -6px;
+  line-height: 1.1;
 }
 
 .hero-headline {
@@ -826,6 +827,10 @@
 
 .footer-logo {
   text-align: center;
+}
+
+.footer-logo .logo-wing {
+  margin: 0 auto;
 }
 
 .footer-social {
