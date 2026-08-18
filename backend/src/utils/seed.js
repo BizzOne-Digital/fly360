@@ -48,7 +48,7 @@ const seed = async () => {
         {
           title: 'Social Photography',
           description: 'Professional social photography for lifestyle and event moments.',
-          price: '$150',
+          price: '$150 / Hour',
           priceLabel: 'Starting at',
           features: [
             'Professional social photography',
