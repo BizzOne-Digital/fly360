@@ -5,6 +5,7 @@ import {
   updateContent,
   bulkUpdateContent,
   uploadHeroMedia,
+  uploadContentImage,
   getSettings,
   updateSettings,
   getDashboardAnalytics,
@@ -22,5 +23,6 @@ router.put('/', protect, bulkUpdateContent);
 router.put('/single', protect, updateContent);
 router.put('/settings', protect, updateSettings);
 router.post('/hero-media', protect, upload.single('media'), uploadHeroMedia);
+router.post('/image/:key', protect, upload.single('image'), uploadContentImage);
 
 export default router;

@@ -63,6 +63,22 @@ export default function ContentPage() {
     }
   };
 
+  const handleAboutImageUpload = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const formData = new FormData();
+    formData.append('image', file);
+
+    try {
+      const res = await contentAPI.uploadImage('aboutImage', formData);
+      setContent((prev) => ({ ...prev, aboutImage: res.data }));
+      setMessage('About section image updated!');
+    } catch (err) {
+      setMessage('Upload failed');
+    }
+  };
+
   if (loading) return <p style={{ color: 'var(--text-muted)' }}>Loading...</p>;
 
   return (
@@ -95,6 +111,19 @@ export default function ContentPage() {
           </div>
         )}
         <input type="file" accept="image/*,video/*" onChange={handleHeroUpload} />
+      </div>
+
+      <div className="admin-card" style={{ marginBottom: 24 }}>
+        <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: 16 }}>About Section Image</h3>
+        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: 12 }}>
+          Shown on the Home page "About" preview and the full About page.
+        </p>
+        {content.aboutImage?.url && (
+          <div style={{ marginBottom: 16, borderRadius: 8, overflow: 'hidden', maxWidth: 400 }}>
+            <img src={content.aboutImage.url} alt="About section" style={{ width: '100%' }} />
+          </div>
+        )}
+        <input type="file" accept="image/*" onChange={handleAboutImageUpload} />
       </div>
 
       <div className="admin-card">

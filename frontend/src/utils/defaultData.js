@@ -3,7 +3,7 @@ export const DEFAULT_CONTENT = {
   heroTitle: 'FLYY 360',
   heroHighlight: 'RAW & REEL',
   heroHeadline: "An Experience You'll Never Forget",
-  heroSubtitle: 'PHOTO BOOTH & SOCIAL PHOTOGRAPHY',
+  heroSubtitle: '360 PHOTO BOOTH & SOCIAL PHOTOGRAPHY',
   heroDescription:
     'We are an operator-assisted 360 photo booth and social photography company delivering immersive, shareable experiences for special occasions, weddings, schools, corporate events, brand activations, and unforgettable celebrations.',
   promoBadge: 'GRAND OPENING SPECIAL — 10% OFF YOUR FIRST BOOKING EVENT',

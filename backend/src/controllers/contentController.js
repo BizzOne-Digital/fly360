@@ -72,6 +72,28 @@ export const uploadHeroMedia = asyncHandler(async (req, res) => {
   res.json(heroMedia);
 });
 
+export const uploadContentImage = asyncHandler(async (req, res) => {
+  if (!req.file) return res.status(400).json({ message: 'File required' });
+
+  const { key } = req.params;
+  const result = await uploadToCloudinary(req.file.buffer, { folder: 'flyy360/content' });
+
+  const existing = await Content.findOne({ key });
+  if (existing?.value?.publicId) {
+    await deleteFromCloudinary(existing.value.publicId);
+  }
+
+  const image = { url: result.secure_url, publicId: result.public_id };
+
+  await Content.findOneAndUpdate(
+    { key },
+    { value: image, section: 'images' },
+    { upsert: true }
+  );
+
+  res.json(image);
+});
+
 export const getSettings = asyncHandler(async (req, res) => {
   const settings = await Settings.find();
   const settingsMap = {};

@@ -211,7 +211,7 @@ const seed = async () => {
       { key: 'heroTitle', value: 'FLYY 360', section: 'hero' },
       { key: 'heroHighlight', value: 'RAW & REEL', section: 'hero' },
       { key: 'heroHeadline', value: 'An Experience You\'ll Never Forget', section: 'hero' },
-      { key: 'heroSubtitle', value: 'Photo Booth & Social Photography', section: 'hero' },
+      { key: 'heroSubtitle', value: '360 Photo Booth & Social Photography', section: 'hero' },
       {
         key: 'heroDescription',
         value: 'We are an operator-assisted 360 photo booth and social photography company delivering immersive, shareable experiences for special occasions, weddings, schools, corporate events, brand activations, and unforgettable celebrations.',

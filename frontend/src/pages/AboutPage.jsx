@@ -4,7 +4,7 @@ import { ABOUT_AUDIENCES } from '../utils/constants';
 import StatsBar from '../sections/StatsBar';
 import Testimonials from '../sections/Testimonials';
 
-const ABOUT_IMAGE = '/about.png';
+const DEFAULT_ABOUT_IMAGE = '/img1.jpg';
 
 const WHY_CHOOSE_US = [
   {
@@ -29,6 +29,7 @@ export default function AboutPage() {
   const { content } = useOutletContext();
 
   const heading = content.aboutHeading || 'About FLYY 360 (Raw & Reel)';
+  const aboutImage = content.aboutImage?.url || DEFAULT_ABOUT_IMAGE;
 
   return (
     <main className="page-main">
@@ -61,7 +62,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="about-page-image">
-            <img src={ABOUT_IMAGE} alt="FLYY 360 event experience" loading="lazy" />
+            <img src={aboutImage} alt="FLYY 360 event experience" loading="lazy" />
           </div>
         </div>
       </section>

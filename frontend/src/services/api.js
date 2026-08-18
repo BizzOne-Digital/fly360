@@ -88,6 +88,9 @@ export const contentAPI = {
   uploadHeroMedia: (formData) => api.post('/content/hero-media', formData, {
     headers: { 'Content-Type': 'multipart/form-data' },
   }),
+  uploadImage: (key, formData) => api.post(`/content/image/${key}`, formData, {
+    headers: { 'Content-Type': 'multipart/form-data' },
+  }),
   getAnalytics: () => api.get('/content/analytics'),
 };
 
