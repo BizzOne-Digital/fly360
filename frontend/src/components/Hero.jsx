@@ -4,6 +4,7 @@ import VideoModal from './VideoModal';
 import { IconPlay } from './icons';
 
 const DEFAULT_HERO_BG = '/hero.png';
+const VIDEO_THUMB = '/newimg.jpg';
 
 export default function Hero({ content = {}, settings = {} }) {
   const [videoOpen, setVideoOpen] = useState(false);
@@ -52,7 +53,7 @@ export default function Hero({ content = {}, settings = {} }) {
           {videoUrl && (
             <button className="hero-video-btn" onClick={() => setVideoOpen(true)}>
               <span className="hero-video-thumb">
-                <video src={videoUrl} muted loop autoPlay playsInline />
+                <img src={VIDEO_THUMB} alt="See The Experience" />
                 <span className="hero-video-thumb-play"><IconPlay size={12} /></span>
               </span>
               See The Experience
