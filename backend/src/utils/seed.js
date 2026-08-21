@@ -217,7 +217,7 @@ const seed = async () => {
         value: 'We are an operator-assisted 360 photo booth and social photography company delivering immersive, shareable experiences for special occasions, weddings, schools, corporate events, brand activations, and unforgettable celebrations.',
         section: 'hero',
       },
-      { key: 'promoBadge', value: 'LIMITED-TIME SPECIAL — 10% OFF YOUR FIRST BOOKING EVENT', section: 'hero' },
+      { key: 'promoBadge', value: 'LIMITED TIME OFFER — 10% OFF YOUR FIRST BOOKING EVENT', section: 'hero' },
       { key: 'aboutHeading', value: 'We Don\'t Just Capture Moments.\nWe Create Experiences.', section: 'about' },
       {
         key: 'aboutContent',
