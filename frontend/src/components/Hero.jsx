@@ -62,7 +62,7 @@ export default function Hero({ content = {}, settings = {} }) {
 
         <div className="hero-badge">
           <div className="promo-circle">
-            <span className="promo-circle-top">GRAND OPENING</span>
+            <span className="promo-circle-top">LIMITED-TIME</span>
             <span className="promo-circle-special">SPECIAL</span>
             <span className="promo-circle-off">10% OFF</span>
             <span className="promo-circle-bottom">YOUR FIRST BOOKING EVENT</span>

@@ -6,7 +6,7 @@ export const DEFAULT_CONTENT = {
   heroSubtitle: '360 PHOTO BOOTH & SOCIAL PHOTOGRAPHY',
   heroDescription:
     'We are an operator-assisted 360 photo booth and social photography company delivering immersive, shareable experiences for special occasions, weddings, schools, corporate events, brand activations, and unforgettable celebrations.',
-  promoBadge: 'GRAND OPENING SPECIAL — 10% OFF YOUR FIRST BOOKING EVENT',
+  promoBadge: 'LIMITED-TIME SPECIAL — 10% OFF YOUR FIRST BOOKING EVENT',
   aboutHeading: "We Don't Just Capture Moments.\nWe Create Experiences.",
   aboutContent:
     "We are an operator-assisted 360 Photo Booth & Social Photography company built on a passion for creating unforgettable experiences and turning special moments into memories that last. What started with a vision to bring something fresh, exciting, and elevated to celebrations has grown into an experience designed to make every guest feel like the Star.\n\nAt FLYY 360, we go beyond simply taking photos. We create high-energy, immersive, shareable moments with professional service, creative presentation, premium experiences, and VIP treatment from start to finish. Whether we're capturing a milestone, elevating a celebration, creating engaging social content, or bringing a brand experience to life, our goal is simple: make every moment FLYY.\n\nFLYY 360 — Where Every Moment Takes Center Stage.",
